@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
@@ -16,7 +17,7 @@ import { Blog } from './blog/entities/blog.entity';
       database: 'codebrains',
       schema: 'typeORMBasics',
       entities: [Blog],
-      synchronize: true,
+      synchronize: true
     }),
     BlogModule,
   ],
